@@ -73,14 +73,14 @@ for(var i = 0; i<squares.length; i++){
         console.log(clickedColor);
         console.log(pickedColor);
         if(clickedColor.toString() === pickedColor.toString()){
-            messageDisplay.textContent = "Correct!";
+            messageDisplay.textContent = "You Win!";
             changeColors(clickedColor);
             h1.style.background = clickedColor;
             resetButton.textContent = "Play Again?";
         }
         else{
             this.style.background = "#232323";
-            messageDisplay.textContent = "Try Again";
+            messageDisplay.textContent = "Guess Again";
         }
     });
 }
